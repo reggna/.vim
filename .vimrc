@@ -141,14 +141,17 @@ noremap <space> <C-f>
 nmap <S-Tab> <<
 imap <S-Tab> <Esc><<i
 
+" F2 for jumping between source and header files
+nmap <F2> :A<CR>
+
 " navigate between split windows using ctrl+arrow keys
-nnoremap <C-left> <C-w>h
-nnoremap <C-down> <C-w>j
-nnoremap <C-up> <C-w>k
-nnoremap <C-right> <C-w>l
+nmap <C-left> <C-w>h
+nmap <C-down> <C-w>j
+nmap <C-up> <C-w>k
+nmap <C-right> <C-w>l
 " navigate between buffers using alt+arrow keys
-nnoremap <A-left> :bprev<CR>
-nnoremap <A-right> :bnext<CR>
+nmap <A-left> :bprev<CR>
+nmap <A-right> :bnext<CR>
 
 " Autocommands
 " ruby standard 2 spaces, always
