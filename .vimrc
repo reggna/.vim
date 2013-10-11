@@ -177,5 +177,10 @@ au BufRead,BufNewFile *.txt set spell
 " painful.
 nnoremap <F5> :GundoToggle<CR>
 
-
-
+" cscope:
+" Stop cscope from saying saying the database already has been read
+set nocscopeverbose
+" F3 for searching index for current marked symbole
+nmap <F3> <C-\>s
+" F4 for poping back in the F3 history
+nmap <F4> <C-t>
