@@ -5,7 +5,7 @@ call pathogen#infect('~/.vim/bundle/{}')
 
 
 
-
+set history=10000
 set nocompatible " explicitly get out of vi-compatible mode
 set noexrc " don't use local version of .(g)vimrc, .exrc
 set background=dark " we plan to use a dark background
@@ -144,14 +144,12 @@ imap <S-Tab> <Esc><<i
 " F2 for jumping between source and header files
 nmap <F2> :A<CR>
 
-" navigate between split windows using ctrl+arrow keys
-nmap <C-left> <C-w>h
-nmap <C-down> <C-w>j
-nmap <C-up> <C-w>k
-nmap <C-right> <C-w>l
-" navigate between buffers using alt+arrow keys
-nmap <A-left> :bprev<CR>
-nmap <A-right> :bnext<CR>
+" navigate between buffers using ctrl+arrow keys
+nmap <C-left> :bprev<CR>
+nmap <C-right> :bnext<CR>
+" navigate between tabs using alt+arrow keys
+nmap <A-left> :tabp<CR>
+nmap <A-right> :tabn<CR>
 
 " Autocommands
 " ruby standard 2 spaces, always
