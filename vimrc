@@ -5,7 +5,6 @@ call pathogen#infect('~/.vim/bundle/{}')
 
 
 
-set history=10000
 set nocompatible " explicitly get out of vi-compatible mode
 set noexrc " don't use local version of .(g)vimrc, .exrc
 set background=dark " we plan to use a dark background
@@ -39,6 +38,10 @@ set backup " make backup files
 set backupdir=~/.vim/backup " where to put backup files
 set clipboard+=unnamed " share windows clipboard
 set directory=~/.vim/tmp " directory to place swap files in
+set undofile " save undo history to disk
+set undodir=~/.vim/undo " directory to place undo history files
+set history=1000
+set undolevels=20
 set fileformats=unix,dos,mac " support all three, in this order
 set hidden " you can change buffers without saving
 set iskeyword+=_,$,@,%,# " none of these are word dividers
