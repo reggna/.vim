@@ -4,5 +4,6 @@ cd ~/.vim
 git submodule init
 git submodule update
 curl 'http://www.vim.org/scripts/download_script.php?src_id=7218' > ~/.vim/plugin/a.vim
+curl 'http://www.vim.org/scripts/download_script.php?src_id=21566' > ~/.vim/plugin/wipeout.vim
 curl "http://cscope.sourceforge.net/cscope_maps.vim" > .vim/plugin/cscope_maps.vim
 echo "source ~/.vim/vimrc" > ~/.vimrc
