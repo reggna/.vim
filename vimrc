@@ -25,7 +25,7 @@ set cpoptions=aABceFsmq
 "             |+-- :write updates alternative file name
 "             +-- :read updates alternative file name
 syntax on " syntax highlighting on
-
+set tags=./tags;/ " search for the closest ctag file
 
 
 
@@ -139,6 +139,8 @@ match OverLength /\%81v.\+/
 
 
 " Mappings
+" ctrl+d for goto tag
+noremap <C-d> <C-]>
 " space / shift-space scroll in normal mode
 noremap <S-space> <C-b>
 noremap <space> <C-f>
