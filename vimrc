@@ -134,6 +134,8 @@ set softtabstop=2 " when hitting tab or backspace, how many spaces
                   "should a tab be (see expandtab)
 set tabstop=2 " real tabs should be 8, and they will show with
               " set list on
+highlight OverLength ctermfg=red
+match OverLength /\%81v.\+/
 
 
 " Mappings
