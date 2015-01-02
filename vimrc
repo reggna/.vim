@@ -41,7 +41,8 @@ set directory=~/.vim/tmp " directory to place swap files in
 set undofile " save undo history to disk
 set undodir=~/.vim/undo " directory to place undo history files
 set history=1000
-set undolevels=20
+set undolevels=2000
+set undoreload=20000
 set fileformats=unix,dos,mac " support all three, in this order
 set hidden " you can change buffers without saving
 set iskeyword+=_,$,@,%,# " none of these are word dividers
