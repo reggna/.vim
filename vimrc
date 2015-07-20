@@ -62,6 +62,7 @@ set whichwrap=b,s,<,>,~,[,]
 set wildmenu " turn on command line completion wild style
 set wildignore=*.dll,*.o,*.obj,*.bak,*.exe,*.pyc,*.jpg,*.gif,*.png
 set wildmode=list:longest " turn on wild mode huge list
+set relativenumber
 
 
 
