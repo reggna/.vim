@@ -13,3 +13,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/cmd2"]
+	path = bundle/cmd2
+	url = https://github.com/gelguy/Cmd2.vim.git

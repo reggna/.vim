@@ -159,6 +159,19 @@ nmap <C-right> :bnext<CR>
 nmap <A-left> :tabp<CR>
 nmap <A-right> :tabn<CR>
 
+" For cmd2:
+"nmap / /<F12>
+"cmap <F12> <Plug>(Cmd2Suggest)
+
+
+let g:Cmd2_options = {
+          \ '_complete_ignorecase': 1,
+          \ '_complete_uniq_ignorecase': 0,
+          \ '_complete_fuzzy': 1,
+          \ }
+cmap <expr> <Tab> Cmd2#ext#complete#InContext() ? "\<Plug>(Cmd2Complete)" : "\<Tab>"
+set wildcharm=<Tab>
+
 " Autocommands
 " ruby standard 2 spaces, always
 au BufRead,BufNewFile *.rb,*.rhtml set shiftwidth=2
