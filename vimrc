@@ -196,3 +196,7 @@ nmap <F4> <C-t>
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+
+" fzf:
+set rtp+=~/.vim/native/fzf
+nmap <C-p> :GFiles<CR>
